@@ -1,0 +1,24 @@
+$icon-font-path: "fonts/bootstrap/";
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+
+body {
+    padding: 70px 0 0 0;
+}
+
+/* Required for Angular UI Bootstrap */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.table {
+    .filter-btn {
+        position: relative;
+    }
+    .filter-text {
+
+    }
+    .glyphicon {
+        position: absolute;
+        right: -13px;
+        top: 5px;
+        font-size: 10px;
+    }
+}
