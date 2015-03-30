@@ -59,12 +59,14 @@
         <div ui-view>
 
           <!-- Tour section -->
-          <section style="display:none;" class="tour col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <section style="display:block;" class="tour col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-            <!-- Standings panel -->
-            <div class="panel panel-default standings">
+            <!-- Standings table -->
+            <div style="display:none;" class="panel panel-default standings">
               <div class="panel-heading">
-                Standings
+                <h2 class="panel-title">
+                  Standings
+                </h2>
               </div>
               <table class="table">
                 <thead>
@@ -163,6 +165,8 @@
                 </tbody>
               </table>
             </div>
+
+
           </section>
 
           <!-- Players section -->
@@ -222,7 +226,7 @@
           </section>
 
           <!-- Login section -->
-          <section style="display:block;" class="tour col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <section style="display:none;" class="tour col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
             <!-- login panel -->
             <div class="panel panel-default standings center-block">
