@@ -54,11 +54,15 @@
   </nav>
 
   <div>
-    <div id="content" class="container">
+    <div id="content" class="container-fluid">
       <div class="row">
         <div ui-view>
-          <section class="Tour">
-            <div class="panel panel-default">
+
+          <!-- Tour section -->
+          <section style="display:none;" class="tour col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <!-- Standings panel -->
+            <div class="panel panel-default standings">
               <div class="panel-heading">
                 Standings
               </div>
@@ -160,6 +164,92 @@
               </table>
             </div>
           </section>
+
+          <!-- Players section -->
+          <section style="display:none;" class="tour col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <!-- Standings panel -->
+            <div class="panel panel-default standings">
+              <div class="panel-heading">
+                Players
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <a class="filter-btn" href="#">
+                        <span class="filter-text">Position</span>
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                      </a>
+                    </th>
+                    <th>
+                      <a class="filter-btn" href="#">
+                        <span class="filter-text">Name</span>
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                      </a>
+                    </th>
+                    <th>
+                      <a class="filter-btn" href="#">
+                      <span class="filter-text">Total</span>
+                      <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><a href="#">Carlos Escobar - AKA El Shooter</a></td>
+                    <td>+12</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><a href="#">Alex</a></td>
+                    <td>+12</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><a href="#">Mike</a></td>
+                    <td>+12</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><a href="#">Will</a></td>
+                    <td>+12</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Login section -->
+          <section style="display:block;" class="tour col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <!-- login panel -->
+            <div class="panel panel-default standings center-block">
+              <div class="panel-heading">
+                <h2 class="panel-title">Login</h2>
+              </div>
+              <div class="panel-body">
+                <form>
+                  <div class="input-group">
+                    <span class="input-group-addon">User</span>
+                    <input type="text" class="form-control" placeholder="Username">
+                  </div>
+                  <br>
+                  <div class="input-group">
+                    <span class="input-group-addon">Password</span>
+                    <input type="password" class="form-control" placeholder="Password">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default">Go</button>
+                    </span>
+                  </div>
+                  <br>
+                  <button type="button" class="btn btn-primary btn-lg">Login with Facebook</button>
+                </form>
+              </div>
+            </div>
+          </section>
+
         </div>
       </div>
     </div>
